@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <h1 class="main-title">Tech 2022 Survey Form</h1>
+
+        <p class="main-description">
+          Thank you for taking a time to help us know the best technology this
+          year.
+        </p>
+
+        <hr />
+
+        <form class="form-panel">
+          <div class="form-group">
+            <label for="name" class="label">Fullname</label>
+            <input type="text" id="name" name="name" value="Name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="age" class="label">Age (Optional)</label>
+            <input type="number" id="age" name="age" value="age" required />
+          </div>
+
+          <hr />
+
+          <div class="form-group">
+            <label for="options" class="label"
+              >Which options best descriobes your current role?</label
+            >
+
+            <select name="options" id="options">
+              <option value="">Select current role</option>
+              <option value="student">Student</option>
+              <option value="full-time-job">Full Time Job</option>
+              <option value="partimer">Partimer Job</option>
+              <option value="hobbyist">hobbyist</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+              <option value="none">None</option>
+            </select>
+          </div>
+
+          <hr />
+
+          <div class="form-group">
+            <p class="form-group-title">
+              Would you recommend freeCodeCamp to a friend in the future?
+            </p>
+
+            <label for="definitely" class="label">
+              <input
+                type="radio"
+                id="definitely"
+                name="recommendation"
+                value="definitely"
+              />
+              Definitely</label
+            >
+
+            <label for="maybe" class="label">
+              <input
+                type="radio"
+                id="maybe"
+                name="recommendation"
+                value="maybe"
+              />
+              Maybe</label
+            >
+
+            <label for="not-sure" class="label">
+              <input
+                type="radio"
+                id="not-sure"
+                name="recommendation"
+                value="not-sure"
+              />
+              Not sure</label
+            >
+          </div>
+
+          <hr />
+
+          <div class="form-group">
+            <p class="form-group-title">
+              What position in the Tech Industry are you interested in?
+            </p>
+
+            <label for="frontend" class="label"
+              ><input
+                type="checkbox"
+                name="tech-position"
+                value="frontend"
+                id="frontend"
+              />
+              Frontend</label
+            >
+
+            <label for="backend" class="label"
+              ><input
+                type="checkbox"
+                name="tech-position"
+                value="backend"
+                id="backend"
+              />
+              Backend</label
+            >
+
+            <label for="full-stack" class="label"
+              ><input
+                type="checkbox"
+                name="tech-position"
+                value="full-stack"
+                id="full-stack"
+              />
+              Full-Stack</label
+            >
+
+            <label for="dev-op" class="label">
+              <input
+                type="checkbox"
+                name="tech-position"
+                value="dev-op"
+                id="dev-op"
+              />
+              Dev ops</label
+            >
+
+            <label for="tech-supprt" class="label"
+              ><input
+                type="checkbox"
+                name="tech-position"
+                value="tech-support"
+                id="tech-support"
+              />
+              Tech Support</label
+            >
+
+            <label for="other" class="label"
+              ><input
+                type="checkbox"
+                name="tech-position"
+                value="other"
+                id="other"
+              />
+              Other</label
+            >
+          </div>
+
+          <hr />
+
+          <div class="form-group">
+            <p class="form-group-title">
+              What programming language you are currently using right now?
+            </p>
+
+            <label for="javascript" class="label">
+              <input
+                type="checkbox"
+                name="programming-language"
+                value="javascript"
+                id="javascript"
+              />
+              JavaScript</label
+            >
+
+            <label for="python" class="label">
+              <input
+                type="checkbox"
+                name="programming-language"
+                value="python"
+                id="python"
+              />
+              Python</label
+            >
+
+            <label for="cpp" class="label"
+              ><input
+                type="checkbox"
+                name="programming-language"
+                value="cpp"
+                id="cpp"
+              />
+              C++</label
+            >
+
+            <label for="csharp" class="label">
+              <input
+                type="checkbox"
+                name="programming-language"
+                value="csharp"
+                id="csharp"
+              />
+              C#</label
+            >
+
+            <label for="C" class="label"
+              ><input
+                type="checkbox"
+                name="programming-language"
+                value="C"
+                id="C"
+              />
+              C</label
+            >
+
+            <label for="java" class="label"
+              ><input
+                type="checkbox"
+                name="programming-language"
+                value="java"
+                id="java"
+              />
+              Java</label
+            >
+
+            <label for="ruby" class="label"
+              ><input
+                type="checkbox"
+                name="programming-language"
+                value="ruby"
+                id="ruby"
+              />
+              JavaScript</label
+            >
+
+            <label for="other" class="label"
+              ><input
+                type="checkbox"
+                name="programming-language"
+                value="other"
+                id="other"
+              />
+              Other</label
+            >
+          </div>
+
+          <hr />
+
+          <div class="form-group">
+            <p class="form-group-title">
+              What framework you are currently interested right now?
+            </p>
+
+            <label for="react-js" class="label"
+              ><input
+                type="checkbox"
+                name="frameworks"
+                value="react-js"
+                id="react-js"
+              />
+              React</label
+            >
+
+            <label for="angular-js" class="label"
+              ><input
+                type="checkbox"
+                name="frameworks"
+                value="angular-js"
+                id="angular-js"
+              />
+              Angular</label
+            >
+
+            <label for="vue" class="label">
+              <input type="checkbox" name="frameworks" value="vue" id="vue" />
+              Vue</label
+            >
+
+            <label for="flask" class="label">
+              <input
+                type="checkbox"
+                name="frameworks"
+                value="flask"
+                id="flask"
+              />
+              Flask</label
+            >
+
+            <label for="other" class="label">
+              <input
+                type="checkbox"
+                name="frameworks"
+                value="other"
+                id="other"
+              />
+              Other</label
+            >
+          </div>
+
+          <hr />
+
+          <div class="form-group">
+            <label for="comment" class="label"
+              >Any comments or suggestions?</label
+            >
+
+            <textarea name="comment" id="comment" rows="5"></textarea>
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-submit">Submit</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
